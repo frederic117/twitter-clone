@@ -1,0 +1,19 @@
+<h2>Edit your profile</h2>
+
+<form id="form" action="/profile/<%= profile.id %>/edit/" method="POST">
+
+    <label>Username <br> <input type="text" name="username" value="<%= profile.username %>"></label>
+    <br> <br>
+
+    <label>Email <br> <input type="text" name="email" value="<%= profile.email %>"></label>
+    <br> <br>
+
+    <label>Password <br> <input type="password" name="password" value="<%= profile.password %>"></label>
+    <br> <br>
+
+
+
+    <button>Update</button>
+
+    <button><a href="/home"></a> go back</button>
+</form>
